@@ -23,16 +23,34 @@ public class BattleTriggerWipe : MonoBehaviour
 
     private void RandomizeCards()
     {
-        foreach (CardDisplay display in heroCards)
+        if (PlayerRoleManager.Instance.CurrentRole == PlayerRole.Hero)
         {
-            CardSO randomCard = heroPool.pool[Random.Range(0, heroPool.pool.Length)];
-            display.LoadCard(randomCard);
+            foreach (CardDisplay display in heroCards)
+            {
+                CardSO randomCard = heroPool.pool[Random.Range(0, heroPool.pool.Length)];
+                display.LoadCard(randomCard);
+            }
+
+            foreach (CardDisplay display in villainCards)
+            {
+                CardSO randomCard = villainPool.pool[Random.Range(0, villainPool.pool.Length)];
+                display.LoadCard(randomCard);
+            }
+        }
+        else if (PlayerRoleManager.Instance.CurrentRole == PlayerRole.Villain)
+        {
+            foreach (CardDisplay display in heroCards)
+            {
+                CardSO randomCard = villainPool.pool[Random.Range(0, villainPool.pool.Length)];
+                display.LoadCard(randomCard);
+            }
+
+            foreach (CardDisplay display in villainCards)
+            {
+                CardSO randomCard = heroPool.pool[Random.Range(0, heroPool.pool.Length)];
+                display.LoadCard(randomCard);
+            }
         }
 
-        foreach (CardDisplay display in villainCards)
-        {
-            CardSO randomCard = villainPool.pool[Random.Range(0, villainPool.pool.Length)];
-            display.LoadCard(randomCard);
-        }
     }
 }
