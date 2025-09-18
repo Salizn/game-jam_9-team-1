@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3416b648480b3e84e862cd5126421bd3, type: 3}
+  m_Name: HeroPool
+  m_EditorClassIdentifier: 
+  pool:
+  - {fileID: 11400000, guid: d4bcd3f53130d0a4290fa0fa0e234cc5, type: 2}
+  - {fileID: 11400000, guid: a0023c9ca36af3347bdf52bb4545e4bd, type: 2}
+  - {fileID: 11400000, guid: 92436afd0e5bf864eb6d8821b079ba60, type: 2}
+  - {fileID: 11400000, guid: 68f9c87ce1aacce4e8ab6769dcca7bca, type: 2}
