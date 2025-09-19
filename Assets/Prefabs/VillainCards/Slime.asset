@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Slime
   m_EditorClassIdentifier: 
   cardName: Slime
-  artwork: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  artwork: {fileID: 21300000, guid: 24b214670b606154bbe88c23fd8395e3, type: 3}
   attack: 1
   defense: 1

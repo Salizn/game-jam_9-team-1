@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Sorcerer
   m_EditorClassIdentifier: 
   cardName: Sorcerer
-  artwork: {fileID: 21300000, guid: ff7bfa7addf40784d86f62b8e4a034a6, type: 3}
+  artwork: {fileID: 21300000, guid: c6693b10a1dd85e42af8ea5a32490692, type: 3}
   attack: 5
   defense: 1
