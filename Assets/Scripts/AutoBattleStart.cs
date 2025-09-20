@@ -13,6 +13,8 @@ public class AutoBattleStart : MonoBehaviour
     private int defencevalue2;
     public Sprite koimage;
 
+    public BattleManagerWipe battleManager;
+
 
     public void BattleButtonPress()
     {
@@ -35,8 +37,15 @@ public class AutoBattleStart : MonoBehaviour
 
 
             }
-      
 
 
+        if (battleManager != null)
+        {
+            battleManager.EndBattle();
+        }
+        else
+        {
+            Debug.LogWarning("AutoBattleStart: No BattleManagerWipe reference assigned!");
+        }
     }
 }
